@@ -1,4 +1,5 @@
 vi:
+  ror_sample_app: "Dự án mẫu Ruby on Rails Tutorial"
   layouts:
     application:
       caption: "Hướng dẫn Ruby on Rails"
