@@ -8,6 +8,7 @@ max_length_name: 50
 min_length_email: 4
 standard_memory: 5
 min_length_name: 3
+expired_times: 2
 feed_items: 5
 check_box: 1
 size: 60
@@ -20,3 +21,6 @@ show_limit:
   show_20: 20
   show_30: 30
   show_50: 50
+content_length: 140
+feedItems: 5
+micropostItems: 10

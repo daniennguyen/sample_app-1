@@ -2,6 +2,8 @@ en:
   translate_to_js:
     notice_file: "Maximum file size is 5MB. Please choose a smaller file."
 
+  following: "Đang theo dõi"
+  follower: "Những người theo dõi"
   user_not_found: "Không tìm thấy ai cả"
   session_email: "Invalid email/password combination"
   success_to_create_user: "Create successful"
@@ -36,6 +38,10 @@ en:
       next: "NEXT ›"
       truncate: "…"
   users:
+    unfollow:
+      submit_unfollow: "Unfollow"
+    follow:
+      submit_follow: "Follow"
     index:
       index_title: "All users"
     new:
@@ -55,6 +61,8 @@ en:
     user:
       user_confirm: "You sure?"
       user_delete: "Delete"
+    show_follow:
+      view_my_profile: "view my profile"
   layouts:
     application:
       app_cap_language: "Language"
@@ -130,6 +138,9 @@ en:
       forgot_password: "Forgot password"
       submit: "Submit"
   shared:
+    stat:
+      following: "Following"
+      follower: "Follower"
     error_messages:
       form_contains: "The form contains "
     form:
