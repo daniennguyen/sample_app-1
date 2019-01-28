@@ -1,5 +1,6 @@
 en:
-  succes_to_create_user: "Create successful"
+  session_cntroller_danger_flag: "Invalid email/password combination"
+  success_to_create_user: "Create successful"
   fail_to_create_user: "Create fail"
   fail_to_load_user: "Sorry, your user you search is not here :|"
   ror_sample_app: "Ruby on Rails Tutorial Sample App"
@@ -17,9 +18,15 @@ en:
       app_cap_language: "Language"
     header:
       header_caption: "sample app"
-      header_navbar_right_0: "Home"
-      header_navbar_right_1: "Help"
-      header_navbar_right_2: "Log in"
+      header_navbar_home: "Home"
+      header_navbar_help: "Help"
+      header_logged_login: "Log in"
+    has_log_in:
+      header_logged_users: "Users"
+      header_logged_account: "Account"
+      header_logged_profile: "Profile"
+      header_logged_settings: "Settings"
+      header_logged_logout: "Log out"
     footer:
       footer_paragraph_0: "The"
       footer_paragraph_1: "Ruby on Rails Tutorial"
@@ -57,3 +64,11 @@ en:
       home_paragraph_0: "This is the home page for the"
       home_paragraph_1: "sample application."
       home_signup: "Sign up now"
+  sessions:
+    new:
+      session_caption: "Log in"
+      session_new_user: "New user?"
+      session_signup_now: "Sign up now"
+    form:
+      session_login_button: "Log in"
+      session_login_password: "Password"

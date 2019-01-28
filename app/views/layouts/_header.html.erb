@@ -3,9 +3,13 @@
     <%= link_to t(".header_caption"), root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to t(".header_navbar_right_0"), root_path %></li>
-        <li><%= link_to t(".header_navbar_right_1"), help_path %></li>
-        <li><%= link_to t(".header_navbar_right_2"), "#" %></li>
+        <li><%= link_to t(".header_navbar_home"), root_path %></li>
+        <li><%= link_to t(".header_navbar_help"), help_path %></li>
+        <% if logged_in? %>
+          <%= render "layouts/has_log_in" %>
+        <% else %>
+          <li><%= link_to t(".header_logged_login"), login_path %></li>
+        <% end %>
       </ul>
     </nav>
   </div>

@@ -1,6 +1,7 @@
 vi:
+  session_cntroller_danger_flag: "Email không hợp lệ"
   fail_to_load_user: "Xin lỗi, bạn ko tồn tại trên trái đất này... :|"
-  succes_to_create_user: "Tạo thành công"
+  success_to_create_user: "Tạo thành công"
   fail_to_create_user: "Tạo thất bại"
   ror_sample_app: "Dự án mẫu Ruby on Rails Tutorial"
   users:
@@ -17,9 +18,15 @@ vi:
       app_cap_language: "Ngôn ngữ"
     header:
       header_caption: "Ứng dụng mẫu"
-      header_navbar_right_0: "Trang chủ"
-      header_navbar_right_1: "Trợ giúp"
-      header_navbar_right_2: "Đăng nhập"
+      header_navbar_home: "Trang chủ"
+      header_navbar_help: "Trợ giúp"
+      header_logged_login: "Đăng nhập"
+    has_log_in:
+      header_logged_users: "Người dùng"
+      header_logged_account: "Tài khoản"
+      header_logged_profile: "Hồ sơ"
+      header_logged_settings: "Cài đặt"
+      header_logged_logout: "Đăng xuất"
     footer:
       footer_paragraph_0: ""
       footer_paragraph_1: "Hướng dẫn Ruby on Rails"
@@ -57,3 +64,11 @@ vi:
       home_paragraph_0: "Đây là trang chủ của"
       home_paragraph_1: "Dự án mẫu."
       home_signup: "Đăng kí ngay"
+  sessions:
+    new:
+      session_caption: "Đăng nhập"
+      session_new_user: "Bạn là người mới?"
+      session_signup_now: "Đăng ký ngay"
+    form:
+      session_login_button: "Đăng nhập"
+      session_login_password: "Mật khẩu"

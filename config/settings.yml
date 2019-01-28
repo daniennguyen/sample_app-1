@@ -1,1 +1,7 @@
 size: 80
+url: "https://secure.gravatar.com/avatar/"
+min_length_name: 3
+min_length_email: 4
+max_length_name: 50
+max_length_email: 225
+min_length_password: 6
