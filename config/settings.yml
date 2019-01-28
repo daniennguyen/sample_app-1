@@ -5,3 +5,4 @@ min_length_email: 4
 max_length_name: 50
 max_length_email: 225
 min_length_password: 6
+check_box: 1

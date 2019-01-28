@@ -6,5 +6,10 @@
   <%= f.label :password, t(".session_login_password") %>
   <%= f.password_field :password, class: "form-control" %>
 
+  <%= f.label :remember_me, class: "checkbox inline" do %>
+    <%= f.check_box :remember_me %>
+    <span><%= t ".session_rememberme" %></span>
+  <% end %>
+
   <%= f.submit t(".session_login_button"), class: "btn btn-primary" %>
 <% end %>

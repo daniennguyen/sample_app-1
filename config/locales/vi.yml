@@ -72,3 +72,4 @@ vi:
     form:
       session_login_button: "Đăng nhập"
       session_login_password: "Mật khẩu"
+      session_rememberme: "Ghi nhhớ mật khẩu"
