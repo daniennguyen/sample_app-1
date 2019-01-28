@@ -1,16 +1,12 @@
 <% provide :title, t(".edit_title") %>
-
 <h1><%= t ".edit_profile_title" %></h1>
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-
-    <%= render "form",linkin_part: @user, button_text: t(".button_text")%>
-
+    <%= render "form", button_text: t(".button_text")%>
     <div class="gravatar_edit">
       <%= gravatar_for @user %>
       <%= link_to t(".edit_change"), Settings.gravatarLink, target: "_blank" %>
     </div>
-    
   </div>
 </div>

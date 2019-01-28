@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   concern :paginatable do
-    get '(page/:page)', action: :index, on: :collection, as: ''
+    get "(page/:page)", action: :index, on: :collection, as: ""
   end
 
   scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
@@ -15,5 +15,8 @@ Rails.application.routes.draw do
     post "/login", to: "sessions#create"
     delete "/logout", to: "sessions#destroy"
     resources :users, concerns: :paginatable
+    resources :account_activations, only: :edit
+    resources :password_resets, only: %i(new create edit update)
+    resources :microposts, only: %i(create destroy)
   end
 end
