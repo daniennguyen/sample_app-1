@@ -1,9 +1,17 @@
 en:
+  succes_to_create_user: "Create successful"
+  fail_to_create_user: "Create fail"
+  fail_to_load_user: "Sorry, your user you search is not here :|"
   ror_sample_app: "Ruby on Rails Tutorial Sample App"
   users:
     new:
       new_caption: "Sign in"
-      new_paragraph_0: "This will be a signup page for new users."
+    form:
+      new_name: "Name"
+      new_email: "Email"
+      new_password: "Password"
+      new_confim_password: "Password confirm"
+      new_account: "Create my account"
   layouts:
     application:
       app_cap_language: "Language"
