@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SampleApp</title>
+    <title><%= yield(:title) %> | <%= t ".caption" %></title>
+    <%# Ruby on Rails Tutorial Sample App %>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag "application", media: "all" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <div id="nav">
+      <%= t ".cap_language" %>
+      <%= link_to_unless_current "English", locale: "en" %>
+      <%= link_to_unless_current "Vietnam", locale: "vi" %>
+    </div>
     <%= yield %>
   </body>
 </html>

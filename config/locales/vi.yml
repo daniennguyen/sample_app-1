@@ -1,0 +1,34 @@
+vi:
+  layouts:
+    application:
+      caption: "Hướng dẫn Ruby on Rails"
+      cap_language: "Ngôn ngữ"
+  static_pages:
+    about:
+      title: "Về chúng tôi"
+      caption: "Về chúng tôi"
+      i_0: ""
+      i_1: "là một"
+      i_2: "cuốn sách"
+      i_3: "và là"
+      i_4: "một chuỗi series"
+      i_5: "hướng dẫn cách phát triển website với"
+      i_6: "Đây chính là ứng dụng mẫu cho cuốn sách này."
+    contact: 
+      title: "Liên hệ"
+      caption: "Liên hệ"
+      c_0: "Liên hệ với Ruby on Rails Tutorial về dự án mẫu tại"
+      c_1: "trang liên hệ"
+    help: 
+      title: "Trợ giúp"
+      caption: "Trợ giúp"
+      h_0: "Sự trợ giúp Ruby on Rails Tutorial có tại"
+      h_1: "mục trợ giúp"
+      h_2: "Cần sự trợ giúp về dự án mẫu ?, có tại"
+      h_3_a: "Hướng dẫn sách "
+      h_3_b: ""
+    home:
+      title: "Trang chủ"
+      caption: "Trang chủ"
+      h_0: "Đây là trang chủ của"
+      h_1: "Dự án mẫu."
