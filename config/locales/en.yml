@@ -1,4 +1,5 @@
 en:
+  ror_sample_app: "Ruby on Rails Tutorial Sample App"
   layouts:
     application:
       caption: "Ruby on Rails Tutorial Sample App"
