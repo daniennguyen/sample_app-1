@@ -1,3 +1,8 @@
 <% provide :title, t(".new_caption") %>
 <h1><%= t ".new_caption" %></h1>
-<p><%= t ".new_paragraph_0" %></p>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= render "users/form" %>
+  </div>
+</div>

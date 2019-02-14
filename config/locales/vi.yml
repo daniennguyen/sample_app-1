@@ -1,9 +1,17 @@
 vi:
+  fail_to_load_user: "Xin lỗi, bạn ko tồn tại trên trái đất này... :|"
+  succes_to_create_user: "Tạo thành công"
+  fail_to_create_user: "Tạo thất bại"
   ror_sample_app: "Dự án mẫu Ruby on Rails Tutorial"
   users:
     new:
       new_caption: "Đăng ký"
-      new_paragraph_0: "Đây sẽ là trang đăng kí cho người dùng"
+    form:
+      new_name: "Tên"
+      new_email: "Email"
+      new_password: "Mật khẩu"
+      new_confirm_password: "Xác nhật mật khẩu"
+      new_account: "Tạo mới tài khoản"
   layouts:
     application:
       app_cap_language: "Ngôn ngữ"
