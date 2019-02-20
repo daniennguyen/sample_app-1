@@ -1,0 +1,9 @@
+<% provide :title, t(".session_caption") %>
+<h1><%= t ".session_caption" %></h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= render "sessions/form" %>
+    <p><%= t ".session_new_user" %> <%= link_to t(".session_signup_now"), signup_path %></p>
+  </div>
+</div>

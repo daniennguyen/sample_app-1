@@ -1,0 +1,10 @@
+<%= form_with scope: :session, url: login_path do |f| %>
+
+  <%= f.label :email %>
+  <%= f.email_field :email, class: "form-control" %>
+
+  <%= f.label :password, t(".session_login_password") %>
+  <%= f.password_field :password, class: "form-control" %>
+
+  <%= f.submit t(".session_login_button"), class: "btn btn-primary" %>
+<% end %>

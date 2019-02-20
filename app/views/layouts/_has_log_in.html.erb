@@ -1,0 +1,14 @@
+<li><%= link_to t(".header_logged_users"), "#" %></li>
+<li class="dropdown">
+  <%= link_to t(".header_logged_account"), "#",
+    class: "dropdown-toggle", data: {toggle: "dropdown"} %>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <li><%= link_to t(".header_logged_profile"), user_path(id: current_user) %></li>
+    <li><%= link_to t(".header_logged_settings"), "#" %></li>
+    <li class="divider"></li>
+    <li>
+      <%= link_to t(".header_logged_logout"), logout_path, method: :delete %>
+    </li>
+  </ul>
+</li>
