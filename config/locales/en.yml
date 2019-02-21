@@ -72,3 +72,4 @@ en:
     form:
       session_login_button: "Log in"
       session_login_password: "Password"
+      session_rememberme: "Remember me on this computer"
