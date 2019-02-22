@@ -9,6 +9,47 @@ module SessionsHelper
     cookies.permanent[:remember_token] = user.remember_token
   end
 
+  def forget user
+    user.forget
+    cookies.delete :user_id
+    cookies.delete :remember_token
+  end
+
+  def redirect_back_or default
+    redirect_to session[:forwarding_url] || default
+    session.delete :forwarding_url
+  end
+
+  def store_location
+    session[:forwarding_url] = request.original_url if request.get?
+  end
+
+  def logged_in_user
+    return if logged_in?
+    store_location
+    flash[:danger] = t :please_log_in
+    redirect_to login_url
+  end
+
+  def correct_user
+    @user = User.find_by params[:id]
+    redirect_to root_url unless current_user? @user
+  end
+
+  def admin_user
+    redirect_to root_url unless current_user.admin?
+  end
+
+  def logged_and_redirect_to user
+    log_in user
+    redirect_to user
+    flash[:success] = t :success_to_create_user
+  end
+
+  def logged_in?
+    current_user.present?
+  end
+
   def current_user
     if user_id = session[:user_id]
       @current_user ||= User.find_by id: user_id
@@ -22,14 +63,8 @@ module SessionsHelper
     end
   end
 
-  def logged_in?
-    current_user.present?
-  end
-
-  def forget user
-    user.forget
-    cookies.delete :user_id
-    cookies.delete :remember_token
+  def current_user? user
+    user == current_user
   end
 
   def log_out

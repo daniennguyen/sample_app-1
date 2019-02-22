@@ -1,0 +1,15 @@
+<% provide :title, t(".index_title") %>
+<h1><%= t ".index_title" %></h1>
+
+<ul class="users">
+  <%= search_form_for @search do |f|%>
+    <%= select_tag :limit,
+      options_from_collection_for_select(
+        Settings.show_limit, :second, :second, selected: params[:limit] || 
+        Settings.show_limit.limit),id: "show-limit"%>
+    <%= f.submit "Whatever", id: "subbmit" %>
+  <% end %>
+
+  <%= render "user", model: @users %>
+  <%= paginate @users, theme: "twitter-bootstrap-3" %>
+</ul>

@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+
+  concern :paginatable do
+    get '(page/:page)', action: :index, on: :collection, as: ''
+  end
+
   scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
     root "static_pages#home"
     get "/help", to: "static_pages#help"
@@ -9,6 +14,6 @@ Rails.application.routes.draw do
     get "/login", to: "sessions#new"
     post "/login", to: "sessions#create"
     delete "/logout", to: "sessions#destroy"
-    resources :users
+    resources :users, concerns: :paginatable
   end
 end

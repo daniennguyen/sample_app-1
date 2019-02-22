@@ -6,13 +6,16 @@ class User < ApplicationRecord
   has_secure_password
 
   validates :name, presence: true, length:
-    {minimum: Settings.min_length_name, maximum: Settings.max_length_name}
+    {minimum: Settings.min_length_name,
+      maximum: Settings.max_length_name}
   validates :email, presence: true, length:
-    {minimum: Settings.min_length_email, maximum: Settings.max_length_email},
-    format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
+    {minimum: Settings.min_length_email,
+      maximum: Settings.max_length_email},
+      format: {with: VALID_EMAIL_REGEX},
+      uniqueness: {case_sensitive: false}
   validates :password, presence: true, length:
-    {minimum: Settings.min_length_password}
-
+    {minimum: Settings.min_length_password},
+      allow_nil: true
   before_save{self.email = email.downcase}
 
   class << self
