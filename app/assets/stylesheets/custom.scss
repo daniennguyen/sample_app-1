@@ -1,17 +1,6 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
-
-
-:root {
-  --main-border-color: #bbb;
-  --red-color: red;
-  --white--color: white;
-  --gray-darker: $gray-darker;
-  --gray-medium-light: #eaeaea;
-  --gray-light: $gray-light;
-  --state-danger-text: $state-danger-text;
-  --gray-color: $gray;
-}
+@import 'colors';
 
 body {
   padding-top: 60px;
@@ -49,7 +38,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: var(--gray-light);
+  color: $gray-light;
 }
 
 p {
@@ -61,13 +50,13 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: var(--gray-medium-light);
+  color: $gray-medium-light;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   &:hover {
-    color: var(--white--color);
+    color: $white-color;
     text-decoration: none;
   }
 }
@@ -75,12 +64,12 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid var(--gray-medium-light);
-  color: var(--gray-light);
+  border-top: 1px solid $gray-medium-light;
+  color: $gray-light;
   a {
-    color: var(--gray-color);
+    color: $gray;
     &:hover {
-      color: var(--gray-darker);
+      color: $gray-darker;
     }
   }
   small {
@@ -146,7 +135,7 @@ aside {
 }
 
 input, textarea, select, .uneditable-input {
-  border: 1px solid var(--main-border-color);
+  border: 1px solid $border-color;
   width: 100%;
   margin-bottom: 15px;
   @include box_sizing;
@@ -157,9 +146,9 @@ input {
 }
 
 #error_explanation {
-  color: var(--red-color);
+  color: $red-color;
   ul {
-    color: var(--red-color);
+    color: $red-color;
     margin: 0 0 30px;
   }
 }
@@ -167,7 +156,7 @@ input {
 .field_with_errors {
   @extend .has-error;
   .form-control {
-    color: var(--state-danger-text)
+    color: $state-danger-text;
   }
 }
 
@@ -183,4 +172,18 @@ input {
 #session_remember_me {
   width: auto;
   margin-left: 0;
+}
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
+}
+
+#subbmit {
+  display: none;
 }

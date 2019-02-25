@@ -1,18 +1,40 @@
 en:
-  session_cntroller_danger_flag: "Invalid email/password combination"
+  session_email: "Invalid email/password combination"
   success_to_create_user: "Create successful"
   fail_to_create_user: "Create fail"
   fail_to_load_user: "Sorry, your user you search is not here :|"
   ror_sample_app: "Ruby on Rails Tutorial Sample App"
+  update_success: "Profile updated"
+  update_failed: "Update failed"
+  please_log_in: "Please log in."
+  delete_success: "User deleted"
+  views:
+    pagination:
+      first: "« FIRST"
+      last: "LAST »"
+      previous: "‹ PREV"
+      next: "NEXT ›"
+      truncate: "…"
   users:
+    index:
+      index_title: "All users"
     new:
       new_caption: "Sign in"
+      button_text: "Create"
     form:
       new_name: "Name"
       new_email: "Email"
       new_password: "Password"
       new_confim_password: "Password confirm"
       new_account: "Create my account"
+    edit:
+      edit_title: "Edit user"
+      edit_profile_title: "Update your profile"
+      edit_change: "Change"
+      button_text: "Save changes"
+    user:
+      user_confirm: "You sure?"
+      user_delete: "Delete"
   layouts:
     application:
       app_cap_language: "Language"

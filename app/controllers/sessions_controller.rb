@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     if user&.authenticate params[:session][:password]
       remember_login user
     else
-      flash.now[:danger] = t :session_cntroller_danger_flag
+      flash.now[:danger] = t :session_email
       render :new
     end
   end
@@ -17,10 +17,12 @@ class SessionsController < ApplicationController
     redirect_to root_url
   end
 
+  private
+
   def remember_login user
     log_in user
     remember_me = params[:session][:remember_me]
     remember_me == Settings.check_box.to_s ? remember(user) : forget(user)
-    redirect_to user
+    redirect_back_or user
   end
 end
