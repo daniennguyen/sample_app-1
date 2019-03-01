@@ -4,13 +4,14 @@ class User < ApplicationRecord
   attr_reader :remember_token
 
   has_secure_password
+  has_many :microposts, dependent: :destroy
 
   validates :name, presence: true, length:
     {minimum: Settings.min_length_name,
-      maximum: Settings.max_length_name}
+     maximum: Settings.max_length_name}
   validates :email, presence: true, length:
     {minimum: Settings.min_length_email,
-      maximum: Settings.max_length_email},
+     maximum: Settings.max_length_email},
       format: {with: VALID_EMAIL_REGEX},
       uniqueness: {case_sensitive: false}
   validates :password, presence: true, length:
@@ -45,5 +46,17 @@ class User < ApplicationRecord
 
   def forget
     update remember_digest: nil
+  end
+
+  def feed
+    microposts
+  end
+
+  def current_user? user
+    self == user
+  end
+
+  def password_reset_expired?
+    reset_sent_at < 2.hours.ago
   end
 end

@@ -1,12 +1,18 @@
-size: 80
 url: "https://secure.gravatar.com/avatar/"
-min_length_name: 3
-min_length_email: 4
-max_length_name: 50
-max_length_email: 225
-min_length_password: 6
-check_box: 1
 gravatarLink: "http://gravatar.com/emails"
+min_length_password: 6
+max_length_email: 225
+content_length: 140
+micropost_items: 10
+max_length_name: 50
+min_length_email: 4
+standard_memory: 5
+min_length_name: 3
+feed_items: 5
+check_box: 1
+size: 60
+x: 400
+y: 400
 show_limit:
   show_5: 5
   show_10: 10

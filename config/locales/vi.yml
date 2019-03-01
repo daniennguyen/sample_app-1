@@ -1,4 +1,8 @@
 vi:
+  translate_to_js:
+    notice_file: "Dung lượng file cho phép không vượt quá 5MB. Hãy chọn file khác."
+
+  user_not_found: "User not found"
   session_email: "Email không hợp lệ"
   fail_to_load_user: "Xin lỗi, bạn ko tồn tại trên trái đất này... :|"
   success_to_create_user: "Tạo thành công"
@@ -8,6 +12,22 @@ vi:
   update_failed: "Cập nhật thất bại"
   please_log_in: "Mời bạn đăng nhập"
   delete_success: "Xóa thành công"
+  account_active: "Đã kích hoạt tài khoản!"
+  invalid_activation_link: "Link active tài khoản không hợp lệ"
+  let_log: "Please log in."
+  micropost_create: "Đã tạo micropost"
+  deleted_micropost: "Đã xóa micropost"
+  deleted_micropost_failed: "Xóa Micropost thất bại"
+  not_found_email: "Không tìm thấy email"
+  not_empty: "không thể để trống"
+  reseted_password: "Mật khẩu đã được reset"
+  password_expire: "Mật khẩu reset đã hết hạn"
+  email_and_password_reset_instructions: "Đã gửi hướng dẫn reset mật khẩu"
+  account_actition: "Kích hoạt tài khoản"
+  password_reset: "Reset mật khẩu"
+  just_say_high: "Xin chào"
+  picture_size: "Nên chọn ảnh nhỏ hơn 5MB"
+  delete_fail: "Xóa thất bại"
   views:
     pagination:
       first: "« ĐẦU"
@@ -95,3 +115,38 @@ vi:
       session_login_button: "Đăng nhập"
       session_login_password: "Mật khẩu"
       session_rememberme: "Ghi nhhớ mật khẩu"
+  microposts:
+    micropost:
+      posted: "Đã đăng"
+      ago: "năm"
+      you_sure: "Bạn có chắc ?"
+      delete: "Xóa"
+  password_reset:
+    edit:
+      reset_password: "Reset mật khẩu"
+      confirm: "Xác nhận"
+      update_password: "Cập nhật mật khẩu"
+    new:
+      forgot_password: "Quên mật khẩu"
+      submit: "Gửi"
+  shared:
+    error_messages:
+      form_contains: "Trong form chứa"
+    form:
+      placeholder: "Soạn mới micropost..."
+      post: "Đăng"
+    micropost_form:
+      placeholder: "Soạn mới micropost..."
+      post: "Đăng"
+    user_info:
+      view_my_profile: "Hồ sơ của tôi"
+  user_mailer:
+    account_activation:
+      activate_title: "Sample App"
+      instruction: "Chào mừng tới sample app! Click vào link dưới đây để kích hoạt tài khoản:"
+      active: "Kích hoạt!"
+  password_reset:
+      password_reset: "Password reset"
+      instruction: "Để kích hoạt mật khẩu, click vào link dưới đây để kích hoạt tài khoản:"
+      expire: "This link will expire in two hours."
+      ignore: "Nếu bạn không cần reset password, hãy bỏ qua tin nhăn email"
