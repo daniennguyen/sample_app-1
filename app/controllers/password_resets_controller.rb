@@ -1,5 +1,6 @@
 class PasswordResetsController < ApplicationController
-  before_action :find_user, :valid_user, :check_expiration, only: %i(edit update)
+  before_action :find_user, :valid_user, only: %i(edit update)
+  before_action :check_expiration, only: %i(edit update)
 
   def new; end
 
@@ -7,7 +8,7 @@ class PasswordResetsController < ApplicationController
     @user = User.find_by email: params[:password_reset][:email].downcase!
 
     if @user
-      sent_password_reset_instructionss @user
+      sent_password_reset_instructions @user
     else
       flash.now[:danger] = t :not_found_email
       render :new
@@ -34,9 +35,10 @@ class PasswordResetsController < ApplicationController
   end
 
   def find_user
-    return if @user = User.find_by email: params[:email]
+    @user = User.find_by email: params[:email]
+    return if @user
     flash[:danger] = t :user_not_found
-    redirect_to root_pathactive
+    redirect_to root_path
   end
 
   def valid_user

@@ -11,7 +11,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find_by id: params[:id]
     @microposts = @user.microposts.order_desc.page(params[:page])
-      .per Settings.micropost_items
+                       .per Settings.micropost_items
     redirect_and_show @user
   end
 

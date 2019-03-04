@@ -20,7 +20,7 @@ class MicropostsController < ApplicationController
     else
       flash[:success] = t :deleted_micropost_failed
       redirect_to root_url
-    end    
+    end
   end
 
   private

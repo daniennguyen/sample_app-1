@@ -2,6 +2,8 @@ vi:
   translate_to_js:
     notice_file: "Dung lượng file cho phép không vượt quá 5MB. Hãy chọn file khác."
 
+  following: "Following"
+  follower: "Follower"
   user_not_found: "User not found"
   session_email: "Email không hợp lệ"
   fail_to_load_user: "Xin lỗi, bạn ko tồn tại trên trái đất này... :|"
@@ -36,6 +38,10 @@ vi:
       next: "SAU ›"
       truncate: "…"
   users:
+    unfollow:
+      submit_unfollow: "Bỏ theo dõi"
+    follow:
+      submit_follow: "Theo dõi"
     index:
       index_title: "Tất cả người dùng"
     new:
@@ -55,6 +61,8 @@ vi:
     user:
       user_confirm: "Bạn chắc chắn chứ?"
       user_delete: "Xóa"
+    show_follow:
+      view_my_profile: "Hồ sơ của bạn"
   layouts:
     application:
       app_cap_language: "Ngôn ngữ"
@@ -130,6 +138,9 @@ vi:
       forgot_password: "Quên mật khẩu"
       submit: "Gửi"
   shared:
+    stat:
+      following: "Đang theo dõi"
+      follower: "Được theo dõi"
     error_messages:
       form_contains: "Trong form chứa"
     form:
